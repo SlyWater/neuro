@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from lab3.neural import MLP
 
-
+#%%
 df = pd.read_csv('data.csv')
 
 df = df.iloc[np.random.permutation(len(df))]
@@ -32,8 +32,8 @@ for i in range(iterations):
     X = Xy.iloc[:, 0:2].values
     y = Xy.iloc[:, 2].values.reshape(-1,1)
       
-    for k in range(len(X)):      
-        net1.train(X[k], y[k])
+    for x1,y1 in zip(X,y):      
+        net1.train(np.array([x1]), y1)
 
     if i % 10 == 0:
         print("На итерации: " + str(i) + ' || ' + "Средняя ошибка: " + str(np.mean(np.square(y - net1.predict(X)))))
