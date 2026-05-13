@@ -215,7 +215,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .spyproject/
-lab6/
 *.docx
 6_Image_detection/
 7_BERT_classification/

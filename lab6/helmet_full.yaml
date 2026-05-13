@@ -1,0 +1,8 @@
+path: C:/Users/slywater/Projects/neuro/lab6/data_helmet_full
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Helmet
+  1: NoHelmet
