@@ -221,3 +221,5 @@ lab6/
 7_BERT_classification/
 8_LLM_local/
 9_Toolchain_agent/
+/lab7/model_save_my_3classes/
+/lab7/model_save_toxic/
